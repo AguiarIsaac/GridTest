@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Koulen&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Koulen', cursive;
+}
+
+body {
+    background-color: rgb(42, 21, 63);
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit:cover;
+    border-radius: 12px;
+}
+
+#container {
+    height: 90vh;
+    width: 90vw;
+    margin: 0 auto;
+    margin-top: 2.5rem;
+
+    display: grid;
+    gap: 0.4rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 10% 45% 45%;
+    grid-template-areas: 
+        'b1 b1 b1'
+        'b2 b3 b4'
+        'b5 b6 b4'
+    ;
+
+}
+
+
+h1 {
+    background-image: url('/assets/img/praia.jpg');
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.box {
+    border: 1px solid black;
+    border-radius: 12px;
+}
+
+#box-1 {
+    grid-area: b1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 48px;
+    background-color: tomato;
+}
+
+#box-2 {
+    grid-area: b2;
+}
+
+#box-3 {
+    grid-area: b3;
+}
+
+
+
+#box-4 {
+    grid-area: b4;
+}
+
+#box-5 {
+    grid-area: b5;
+}
+
+#box-6 {
+    grid-area: b6;
+}
